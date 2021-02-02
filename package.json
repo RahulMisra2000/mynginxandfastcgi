@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildcontainerfromscratch": "docker build --no-cache -t mynginximage:1.0 ./",
     "buildcontainer": "docker build -t mynginximage:1.0 ./",
-    "removeimageandcontainer": "docker stop mynginxcont && docker rm mynginxcont && docker rmi mynginximage:1.0",
     "runcontainer": "docker run -d -p 4430:443 -p 8080:80 --name mynginxcont mynginximage:1.0",
-    "shellintorunningcontainer": "docker container exec -it mynginxcont /bin/bash"
+    "shellintorunningcontainer": "docker container exec -it mynginxcont /bin/bash",
+    "removeimageandcontainer": "docker stop mynginxcont && docker rm mynginxcont && docker rmi mynginximage:1.0"
   },
   "keywords": [],
   "author": "",
